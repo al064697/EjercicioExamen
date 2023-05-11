@@ -1,26 +1,29 @@
+package programacion1;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
 /******************************************************************************
 
-Welcome to GDB Online.
-GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
-C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
-Code, Compile, Run and Debug online from anywhere in world.
+Con base al digito final de su matricula, realice el siguiente programa, que
+pueda leer datos desde el teclado para añadir elementos en la clase. Las clases
+deben estar en archivos independientes a su programa y tener sus metodos GET y
+SET y cuando menos los metodos sugeridos. Añada la ruta de archivo GIT en un
+documento con sus evidencias
 
 *******************************************************************************/
-public class Main {
-    
-    import java.util.Scanner;
-    import java.util.ArrayList;
+public class EjercicioExamen {
     
     private int ID;
     private String Nombre;
     private double Latitud, Longitud;
     private int Municipio, Distrito, Seccion, Listado, Votantes;
     
-    public Main() {
+    public EjercicioExamen() {
         
     }
     
-    public Main(int ID, String Nombre, double Latitud, double Longitud, int Municipio, int Distrito, int Seccion, int Listado, int Votantes) {
+    public EjercicioExamen(int ID, String Nombre, double Latitud, double Longitud, int Municipio, int Distrito, int Seccion, int Listado, int Votantes) {
 	this.ID = ID;
 	this.Nombre = Nombre;
 	this.Latitud = Latitud;
@@ -28,108 +31,125 @@ public class Main {
 	this.Municipio = Municipio;
 	this.Distrito = Distrito;
 	this.Seccion = Seccion;
-	this.Listado. Listado;
+	this.Listado = Listado;
 	this.Votantes = Votantes;
-	}
+    }
 
-	public int getID() {
-	return ID;
-	}
+    public int getID() {
+        return ID;
+    }
 
-	public void setID(int ID) {
-	this.ID = ID;
-	}
+    public void setID(int ID) {
+        this.ID = ID;
+    }
 
-	public String getNombre() {
+    public String getNombre() {
 	return Nombre;
-	}
+    }
 
-	public void setNombre(String Nombre) {
+    public void setNombre(String Nombre) {
 	this.Nombre = Nombre;
-	}
+    }
 
-	public double getLatitud() {
+    public double getLatitud() {
 	return Latitud;
-	}
+    }
 
-	public void setLatitud(double Latitud) {
+    public void setLatitud(double Latitud) {
 	this.Latitud = Latitud;
-	}
+    }
 
-	public int getLongitud() {
+    public double getLongitud() {
 	return Longitud;
-	}
+    }
 
-	public void setLongitud(double Longitud) {
+    public void setLongitud(double Longitud) {
 	this.Longitud = Longitud;
-	}
+    }
 
-	public double getAltura() {
-	return Altura;
-	}
-
-	public void setAltura(double Altura) {
-	this.Altura = Altura;
-	}
-
-	public int getMunicipio() {
+    public int getMunicipio() {
 	return Municipio;
-	}
+    }
 
-	public void setMunicipio(int Municipio) {
+    public void setMunicipio(int Municipio) {
 	this.Municipio = Municipio;
-	}
+    }
 	
-	public int getDistrito() {
-	    return Distrito;
-	}
+    public int getDistrito() {
+        return Distrito;
+    }
 	
-	public void setDistrito(int Distrito) {
+    public void setDistrito(int Distrito) {
 	    this.Distrito = Distrito;
-	}
+    }
 	
-	public int getSeccion() {
-	    return Seccion;
-	}
+    public int getSeccion() {
+	return Seccion;
+    }
 	
-	public void setSeccion(int Seccion) {
-	    this.Seccion = Seccion;
-	}
+    public void setSeccion(int Seccion) {
+        this.Seccion = Seccion;
+    }
 	
-	public int getListado() {
-	    return Listado;
-	}
+    public int getListado() {
+	return Listado;
+    }
 	
-	public void setListado(int Listado) {
-	    this.Listado = Listado;
-	}
+    public void setListado(int Listado) {
+	this.Listado = Listado;
+    }
 	
-	public int getVotantes() {
-	    return Votantes;
-	}
+    public int getVotantes() {
+	return Votantes;
+    }
 	
-	public void setVotantes(int Votantes) {
-	    this.Votantes = Votantes;
-	}
+    public void setVotantes(int Votantes) {
+	this.Votantes = Votantes;
+    }
 
-	@Override
-	public String toString() {
-	return "Constructor{ " + "ID=" + ID + "Nombre=" + Nombre + "Latitud=" + Latitud + "Longitud=" + Longitud + "Municipio= " + Municipio + "Distrito= " + Distrito + "Seccion= " + Seccion + "Listado= "+ Listado + "Votantes= " + Votantes + '}';
-	}
+    @Override
+    public String toString() {
+    return "Constructor{ " + "ID=" + ID + "Nombre=" + Nombre + "Latitud=" + Latitud + "Longitud=" + Longitud + "Municipio= " + Municipio + "Distrito= " + Distrito + "Seccion= " + Seccion + "Listado= "+ Listado + "Votantes= " + Votantes + '}';
+    }
     
-	public static void main(String[] args) {
-	    ArrayList<Main> Casillas = new ArrayList<Main>();
-	    Scanner Console = new Scanner (Syste.in);
-	    Casillas.add(new Main(1, "Escuela Justo Sierra Mendez", 19.844, 90.535, 1, 1, 1, 700, 600));
-	    Casillas.add(new Main(2, "Escuela Francisco I. Madero", 19.844, 90.535, 2, 2, 2, 700, 600));
-	    int MainID = Console.nextInt();
-	    MainNombre = Casillas.get(MainID).setNombre();
-	    MainLatitud = Casillas.get(MainID).setLatitud();
-	    MainLongitud = Casillas.get(MainID).setLongitud();
-	    MainMunicipio = Casillas.get(MainID).setMunicipio();
-	    MainDistrito = Casillas
-	    
-	    float PorcentajeParticipacion = (Votantes)(600 / 700) * 100;
-	    
+    public static void main(String[] args) {
+	ArrayList<EjercicioExamen> Casillas = new ArrayList<EjercicioExamen>();
+	Scanner Console = new Scanner (System.in);
+	Casillas.add(new EjercicioExamen(1, "Escuela Justo Sierra Mendez", 19.844, 90.535, 1, 1, 1, 700, 600));
+	Casillas.add(new EjercicioExamen(2, "Escuela Francisco I. Madero", 19.844, 90.535, 2, 2, 2, 700, 600));
+        int MainID = Console.nextInt();
+	String MainNombre = Casillas.get(MainID).getNombre();
+	double MainLatitud = Casillas.get(MainID).getLatitud();
+	double MainLongitud = Casillas.get(MainID).getLongitud();
+	int MainMunicipio = Casillas.get(MainID).getMunicipio();
+	int MainDistrito = Casillas.get(MainID).getDistrito();
+	int MainSeccion = Casillas.get(MainID).getSeccion();
+        int MainListado = Casillas.get(MainID).getSeccion();
+        int MainVotantes = Casillas.get(MainID).getVotantes();
+	float PorcentajeParticipacion = (MainVotantes)* (MainVotantes / MainListado) * 100;
+        float PorcentajeAbstinencia = (100 / MainListado) * 100;
+        int Faltantes = MainListado - MainVotantes;
+        System.out.println(Casillas.toString());
+        
+        //Agregar nuevos datos
+        System.out.println("Nuevo ID");
+        MainID = Console.nextInt();
+        System.out.println("Nuevo nombre");
+        MainNombre = Console.next();
+        MainNombre = Console.nextLine();
+        System.out.println("Nueva latitud");
+        MainLatitud = Console.nextDouble();
+        System.out.println("Nueva longitud");
+        MainLongitud = Console.nextDouble();
+        MainMunicipio = Console.nextInt();
+        MainDistrito = Console.nextInt();
+        MainSeccion = Console.nextInt();
+        MainListado = Console.nextInt();
+        MainVotantes = Console.nextInt();
+        Casillas.add(new EjercicioExamen(MainID, MainNombre, MainLatitud, MainLongitud, MainMunicipio, MainDistrito, MainSeccion, MainListado, MainVotantes));
+        PorcentajeParticipacion = (MainVotantes)* (MainVotantes / MainListado) * 100;
+        PorcentajeAbstinencia = (100 / MainListado) * 100;
+        Faltantes = MainListado - MainVotantes;
+        System.out.println(Casillas.toString());
 	}
 }
