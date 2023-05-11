@@ -1,0 +1,135 @@
+/******************************************************************************
+
+Welcome to GDB Online.
+GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
+C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
+Code, Compile, Run and Debug online from anywhere in world.
+
+*******************************************************************************/
+public class Main {
+    
+    import java.util.Scanner;
+    import java.util.ArrayList;
+    
+    private int ID;
+    private String Nombre;
+    private double Latitud, Longitud;
+    private int Municipio, Distrito, Seccion, Listado, Votantes;
+    
+    public Main() {
+        
+    }
+    
+    public Main(int ID, String Nombre, double Latitud, double Longitud, int Municipio, int Distrito, int Seccion, int Listado, int Votantes) {
+	this.ID = ID;
+	this.Nombre = Nombre;
+	this.Latitud = Latitud;
+	this.Longitud = Longitud;
+	this.Municipio = Municipio;
+	this.Distrito = Distrito;
+	this.Seccion = Seccion;
+	this.Listado. Listado;
+	this.Votantes = Votantes;
+	}
+
+	public int getID() {
+	return ID;
+	}
+
+	public void setID(int ID) {
+	this.ID = ID;
+	}
+
+	public String getNombre() {
+	return Nombre;
+	}
+
+	public void setNombre(String Nombre) {
+	this.Nombre = Nombre;
+	}
+
+	public double getLatitud() {
+	return Latitud;
+	}
+
+	public void setLatitud(double Latitud) {
+	this.Latitud = Latitud;
+	}
+
+	public int getLongitud() {
+	return Longitud;
+	}
+
+	public void setLongitud(double Longitud) {
+	this.Longitud = Longitud;
+	}
+
+	public double getAltura() {
+	return Altura;
+	}
+
+	public void setAltura(double Altura) {
+	this.Altura = Altura;
+	}
+
+	public int getMunicipio() {
+	return Municipio;
+	}
+
+	public void setMunicipio(int Municipio) {
+	this.Municipio = Municipio;
+	}
+	
+	public int getDistrito() {
+	    return Distrito;
+	}
+	
+	public void setDistrito(int Distrito) {
+	    this.Distrito = Distrito;
+	}
+	
+	public int getSeccion() {
+	    return Seccion;
+	}
+	
+	public void setSeccion(int Seccion) {
+	    this.Seccion = Seccion;
+	}
+	
+	public int getListado() {
+	    return Listado;
+	}
+	
+	public void setListado(int Listado) {
+	    this.Listado = Listado;
+	}
+	
+	public int getVotantes() {
+	    return Votantes;
+	}
+	
+	public void setVotantes(int Votantes) {
+	    this.Votantes = Votantes;
+	}
+
+	@Override
+	public String toString() {
+	return "Constructor{ " + "ID=" + ID + "Nombre=" + Nombre + "Latitud=" + Latitud + "Longitud=" + Longitud + "Municipio= " + Municipio + "Distrito= " + Distrito + "Seccion= " + Seccion + "Listado= "+ Listado + "Votantes= " + Votantes + '}';
+	}
+    
+	public static void main(String[] args) {
+	    ArrayList<Main> Casillas = new ArrayList<Main>();
+	    Scanner Console = new Scanner (Syste.in);
+	    Casillas.add(new Main(1, "Escuela Justo Sierra Mendez", 19.844, 90.535, 1, 1, 1, 700, 600));
+	    Casillas.add(new Main(2, "Escuela Francisco I. Madero", 19.844, 90.535, 2, 2, 2, 700, 600));
+	    int MainID = Console.nextInt();
+	    MainNombre = Casillas.get(MainID).setNombre();
+	    MainLatitud = Casillas.get(MainID).setLatitud();
+	    MainLongitud = Casillas.get(MainID).setLongitud();
+	    MainMunicipio = Casillas.get(MainID).setMunicipio();
+	    MainDistrito = Casillas
+	    
+	    float PorcentajeParticipacion = (Votantes)(600 / 700) * 100;
+	    
+	}
+}
